@@ -3,7 +3,7 @@
 set -e
 
 #BASE_URL="https://raw.githubusercontent.com/USERNAME/REPO/main"
-BASE_URL="$PWD"
+BASE_URL="https://raw.githubusercontent.com/Piyush-linux/practical/refs/heads/master"
 echo $BASE_URL
 TOPICS=(
   "lnnm.py" # Design a simple linear neural network model
@@ -16,16 +16,16 @@ TOPICS=(
   "eba.py" # Write a program for error Backpropagation algorithm
   "hn.py" # Write a program for Hopfield Network
   "rbf.py" # Write a program for Radial Basis function
-  "Kohonen Self organizing map"
-  "Adaptive resonance theory"
-  "Write a program for Linear separation"
-  "Write a program for Hopfield network model for associative memory"
-  "Membership and Identity Operators | in, not in"
-  "Membership and Identity Operators is, is not "
-  "Find ratios using fuzzy logic"
-  "Solve Tipping problem using fuzzy logic"
-  "Implementation of Simple genetic algorithm"
-  "Create two classes: City and Fitness using Genetic algorithm"
+  "kso.py" # Kohonen Self organizing map
+  "art.py" # Adaptive resonance theory
+  "ls.py" # Write a program for Linear separation
+  "hnm.py" # Write a program for Hopfield network model for associative memory
+  "io_in.py" # Membership and Identity Operators | in, not in
+  "io_is.py" # Membership and Identity Operators is, is not
+  "fl.py" # Find ratios using fuzzy logic
+  "fl_t.py" # Solve Tipping problem using fuzzy logic
+  "sga.py" # Implementation of Simple genetic algorithm
+  "ga.py" # Create two classes: City and Fitness using Genetic algorithm
 )
 
 echo "📦 Available topics:"
@@ -49,7 +49,7 @@ FILE="${TOPICS[$INDEX]}"
 URL="$BASE_URL/code/$FILE"
 echo $URL
 echo "⬇️  Downloading: $FILE"
-# curl -fsSL "$URL" -o "$FILE"
+curl -fsSL "$URL" -o "$FILE"
 
 # chmod +x "$FILE"
 
