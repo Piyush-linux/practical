@@ -2,8 +2,7 @@
 
 set -e
 
-#BASE_URL="https://raw.githubusercontent.com/USERNAME/REPO/main"
-BASE_URL="https://raw.githubusercontent.com/Piyush-linux/practical/refs/heads/master"
+BASE_URL="https://raw.githubusercontent.com/Piyush-linux/practical/master"
 echo $BASE_URL
 TOPICS=(
   "lnnm.py" # Design a simple linear neural network model
